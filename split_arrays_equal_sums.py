@@ -11,7 +11,10 @@ sum_lst = sum(data)
 half_sum_lst = round(sum_lst / 2)
 data_desc = sorted(data, key=int, reverse=True)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 492b8f558bae4a3c07bf1d713a25c019e8cfa303
 def calculate_half_sum_lst(data):
     list_a = list()
     list_b = list()
@@ -21,7 +24,14 @@ def calculate_half_sum_lst(data):
             list_a.append(i)
         else:
             list_b.append(i)
+<<<<<<< HEAD
     return list_a, list_b
+=======
+    return(list_a, list_b)
+
+output = calculate_half_sum_lst(data)
+print(f"sum of list a {sum(output[0])} \nsum of list b {sum(output[1])}")
+>>>>>>> 492b8f558bae4a3c07bf1d713a25c019e8cfa303
 
 
 output = calculate_half_sum_lst(data)
