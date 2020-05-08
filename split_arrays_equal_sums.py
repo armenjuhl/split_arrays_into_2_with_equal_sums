@@ -16,11 +16,12 @@ def calculate_half_sum_lst(data_set):
     list_a = list()
     list_b = list()
 
-    for idx, val in data_set:
+    for idx, val in enumerate(data_set):
         if sum(list_a) + val <= half_sum_lst:
             list_a.append(val)
         else:
             list_b.append(val)
+
 
     return list_a, list_b
 
