@@ -20,8 +20,7 @@ def calculate_half_sum_lst(data_set):
         if sum(list_a) + val <= half_sum_lst:
             list_a.append(val)
         else:
-            list_b.append(val)
-
+            list_b.append(list_a[idx:])
 
     return list_a, list_b
 
