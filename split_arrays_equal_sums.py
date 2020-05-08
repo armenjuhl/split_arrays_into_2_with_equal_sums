@@ -12,18 +12,18 @@ half_sum_lst = round(sum_lst / 2)
 data_desc = sorted(data, key=int, reverse=True)
 
 
-def calculate_half_sum_lst(data):
+def calculate_half_sum_lst(data_set):
     list_a = list()
     list_b = list()
 
-    for i in data_desc:
-        if sum(list_a) + i <= half_sum_lst:
-            list_a.append(i)
+    for idx, val in data_set:
+        if sum(list_a) + val <= half_sum_lst:
+            list_a.append(val)
         else:
-            list_b.append(i)
+            list_b.append(val)
 
     return list_a, list_b
 
 
-output = calculate_half_sum_lst(data)
+output = calculate_half_sum_lst(data_desc)
 print(f"sum of list a {sum(output[0])} \nsum of list b {sum(output[1])}")
